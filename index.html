@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>糖哨兵血糖中心｜第一版可演示方案</title>
+<link rel="icon" href="data:," />
+<link rel="stylesheet" href="styles.css?v=chart-rules-20260909i" />
+<style>
+  .agp-distribution{margin:12px 0 0;background:#fbfdfc;border-radius:10px;overflow:hidden}
+  .agp-svg{display:block;width:100%;height:150px}
+  .agp-svg .grid{stroke:#dfe9e6;stroke-width:1}
+  .agp-target-band{fill:#e4f8ed}
+  .agp-svg path{fill:none;stroke-linecap:round;stroke-linejoin:round}
+  .agp-p90,.agp-p10{stroke:#9edfc9;stroke-width:3;opacity:.62}
+  .agp-p75,.agp-p25{stroke:#5bc8b1;stroke-width:3;opacity:.72}
+  .agp-median{stroke:#087d70;stroke-width:2.5}
+  .agp-svg text{font-family:inherit;fill:#9aa8a5;font-size:10px}
+  .night-window{display:inline-block;margin:0 0 10px;padding:5px 9px;border-radius:12px;background:#eef8f4;color:#087d70;font-size:12px}
+</style>
+</head>
+<body>
+  <div class="shell">
+    <aside class="rail">
+      <div class="brand"><div class="brand-mark">糖</div><div><h1>糖哨兵</h1><p>血糖中心 · 第一版方案</p></div></div>
+      <nav>
+        <div class="nav-label">方案总览</div>
+        <button class="nav-item active" data-screen="overview">页面总览</button>
+        <div class="nav-label">核心页面 · P0</div>
+        <button class="nav-item" data-screen="realtime">血糖 Tab｜实时监测</button>
+        <button class="nav-item" data-screen="analysis">分析中心｜单日分析</button>
+        <button class="nav-item" data-screen="trend">分析中心｜多日分析</button>
+        <div class="nav-label">汇报材料</div>
+        <a href="方案汇报预览.html" target="_blank" rel="noopener" style="display:block;padding:12px;color:#087d70;background:#eef9f5;border:1px solid #bfe6da;border-radius:10px;text-decoration:none;font-size:12px;margin-top:5px">打开方案论证汇报 ↗</a>
+      </nav>
+      <div class="legend"><span class="dot p0"></span> 第一版 P0 <span class="dot candidate"></span> 候选</div>
+    </aside>
+
+    <main class="canvas" id="canvas"></main>
+    <aside class="notes" id="notes"></aside>
+  </div>
+<script src="app.js?v=chart-rules-20260909q"></script>
+</body>
+</html>
